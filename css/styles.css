@@ -1,0 +1,179 @@
+/* ===== ESTILOS GENERALES ===== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* ===== NAVEGACIÓN ===== */
+
+nav {
+    background-color: var(--color-secundario);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transicion);
+}
+
+nav a:hover {
+    color: var(--color-acento);
+}
+
+/* ===== SECCIONES ===== */
+
+section {
+    min-height: 100vh;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: var(--color-acento);
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* ===== BOTONES ===== */
+
+button,
+.boton {
+    display: inline-block;
+    padding: 12px 25px;
+    border: none;
+    border-radius: var(--radio);
+    background-color: var(--color-acento);
+    color: var(--color-secundario);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transicion);
+}
+
+button:hover,
+.boton:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* ===== FORMULARIO ===== */
+
+form {
+    max-width: 600px;
+    width: 100%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #334155;
+    border-radius: var(--radio);
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-acento);
+}
+
+/* ===== ANIMACIONES ===== */
+
+.animacion {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animacion.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== DISEÑO RESPONSIVE - MÓVIL ===== */
+
+@media (max-width: 767px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    section {
+        padding: 80px 6%;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ===== TABLET ===== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    section {
+        padding: 90px 8%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+/* ===== ESCRITORIO ===== */
+
+@media (min-width: 1024px) {
+
+    section {
+        padding: 100px 10%;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}

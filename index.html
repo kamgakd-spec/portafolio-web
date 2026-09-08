@@ -1,0 +1,380 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portafolio profesional de Jhaimar Santiago Velez Palacios, desarrollador web junior">
+
+    <title>Jhaimar Santiago Velez Palacios | Desarrollador Web Junior</title>
+
+    <!-- ===== HOJAS DE ESTILO ===== -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ===== ENCABEZADO Y NAVEGACIÓN ===== -->
+
+    <header>
+        <div class="container">
+
+            <nav>
+
+                <a href="#inicio" class="logo">
+                    Jhaimar proyecto
+                </a>
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Abrir menú">
+                    ☰
+                </button>
+
+                <ul class="nav-menu" id="nav-menu">
+
+                    <li>
+                        <a href="#inicio" class="nav-link">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#sobre-mi" class="nav-link">
+                            Sobre mí
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#habilidades" class="nav-link">
+                            Habilidades
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#proyectos" class="nav-link">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contacto" class="nav-link">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+
+    <main>
+
+        <!-- ===== SECCIÓN INICIO ===== -->
+
+        <section id="inicio">
+
+            <div class="container">
+
+                <p class="saludo">
+                    Hola, soy
+                </p>
+
+                <h1>
+                    Jhaimar Santiago Velez Palacios
+                </h1>
+
+                <h2 class="titulo-profesional">
+                    Desarrollador Web Junior
+                </h2>
+
+                <p class="descripcion-inicio">
+                    Apasionado por la tecnología y el desarrollo de soluciones
+                    digitales modernas, funcionales y adaptables.
+                </p>
+
+                <a href="#proyectos" class="btn">
+                    Ver mis proyectos
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===== SECCIÓN SOBRE MÍ ===== -->
+
+        <section id="sobre-mi">
+
+            <div class="container">
+
+                <h2>
+                    Sobre mí
+                </h2>
+
+                <article class="sobre-mi-contenido">
+
+                    <p>
+                        Soy Jhaimar Santiago Velez Palacios, un desarrollador web
+                        junior interesado en el desarrollo de soluciones digitales
+                        y en la creación de sitios web modernos, funcionales y
+                        adaptables a diferentes dispositivos.
+                    </p>
+
+                    <p>
+                        Me caracterizo por tener disposición para aprender,
+                        resolver problemas y mejorar continuamente mis
+                        conocimientos en el área del desarrollo web.
+                    </p>
+
+                    <p>
+                        Mi objetivo profesional es continuar creciendo en el área
+                        del desarrollo web, adquirir experiencia en proyectos reales
+                        y aportar mis conocimientos y capacidades a equipos de
+                        trabajo relacionados con la tecnología y el desarrollo
+                        de software.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===== SECCIÓN HABILIDADES ===== -->
+
+        <section id="habilidades">
+
+            <div class="container">
+
+                <h2>
+                    Mis habilidades
+                </h2>
+
+                <div class="habilidades-grid">
+
+                    <article class="habilidad-card">
+
+                        <h3>
+                            HTML5
+                        </h3>
+
+                        <p>
+                            Creación de estructuras web semánticas y organizadas.
+                        </p>
+
+                    </article>
+
+
+                    <article class="habilidad-card">
+
+                        <h3>
+                            CSS3
+                        </h3>
+
+                        <p>
+                            Diseño de interfaces modernas y adaptables.
+                        </p>
+
+                    </article>
+
+
+                    <article class="habilidad-card">
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <p>
+                            Desarrollo de interactividad y comportamiento dinámico.
+                        </p>
+
+                    </article>
+
+
+                    <article class="habilidad-card">
+
+                        <h3>
+                            Responsive Design
+                        </h3>
+
+                        <p>
+                            Diseño compatible con móviles, tablets y computadores.
+                        </p>
+
+                    </article>
+
+
+                    <article class="habilidad-card">
+
+                        <h3>
+                            Visual Studio Code
+                        </h3>
+
+                        <p>
+                            Entorno utilizado para desarrollar y organizar proyectos.
+                        </p>
+
+                    </article>
+
+
+                    <article class="habilidad-card">
+
+                        <h3>
+                            Resolución de problemas
+                        </h3>
+
+                        <p>
+                            Capacidad para analizar problemas y buscar soluciones.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===== SECCIÓN PROYECTOS ===== -->
+
+        <section id="proyectos">
+
+            <div class="container">
+
+                <h2>
+                    Mis proyectos
+                </h2>
+
+                <!-- JavaScript cargará los proyectos aquí -->
+
+                <div id="proyectos-grid"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===== SECCIÓN CONTACTO ===== -->
+
+        <section id="contacto">
+
+            <div class="container">
+
+                <h2>
+                    Contacto
+                </h2>
+
+                <p class="contacto-descripcion">
+                    ¿Te interesa conocer más sobre mi trabajo?
+                    Puedes enviarme un mensaje mediante el siguiente formulario.
+                </p>
+
+
+                <form id="form-contacto">
+
+                    <div class="form-group">
+
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="ejemplo@correo.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="mensaje">
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            placeholder="Escribe tu mensaje"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn">
+                        Enviar mensaje
+                    </button>
+
+
+                    <p id="mensaje-formulario"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+
+    <footer>
+
+        <p>
+            © 2026 Jhaimar Santiago Velez Palacios.
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- ===== JAVASCRIPT ===== -->
+
+    <script src="js/main.js"></script>
+    <script src="js/form-handler.js"></script>
+    <script src="js/animations.js"></script>
+
+</body>
+
+</html>
+```

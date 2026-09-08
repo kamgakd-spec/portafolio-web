@@ -1,0 +1,293 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tienda Tecnológica</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 25px 8%;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #cbd5e1;
+        }
+
+        .volver-container {
+            width: 84%;
+            max-width: 1200px;
+            margin: 20px auto 0;
+        }
+
+        .volver-portafolio {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .volver-portafolio:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        main {
+            width: 84%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .intro {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .intro h2 {
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .producto {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: translateY(-6px);
+        }
+
+        .producto-imagen {
+            height: 170px;
+            background: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .producto-contenido {
+            padding: 20px;
+        }
+
+        .producto h3 {
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .producto p {
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        .precio {
+            display: block;
+            margin-top: 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tienda Tecnológica</h1>
+        <p>Productos tecnológicos modernos para todos</p>
+    </header>
+
+    <div class="volver-container">
+        <a href="../../index.html" class="volver-portafolio">
+            ← Volver al portafolio
+        </a>
+    </div>
+
+    <main>
+
+        <section class="intro">
+            <h2>Bienvenido a nuestra tienda</h2>
+            <p>
+                Explora nuestro catálogo de productos tecnológicos,
+                diseñados para ofrecer calidad, innovación y funcionalidad.
+            </p>
+        </section>
+
+        <section class="productos">
+
+            <article class="producto">
+
+                <div class="producto-imagen">
+                    💻
+                </div>
+
+                <div class="producto-contenido">
+
+                    <h3>Laptop Gamer</h3>
+
+                    <p>
+                        Computador portátil de alto rendimiento para
+                        videojuegos, programación y trabajo.
+                    </p>
+
+                    <span class="precio">$4.500.000</span>
+
+                    <a href="#productos" class="btn">
+                        Ver producto
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="producto">
+
+                <div class="producto-imagen">
+                    🎧
+                </div>
+
+                <div class="producto-contenido">
+
+                    <h3>Audífonos Gamer</h3>
+
+                    <p>
+                        Audífonos con sonido envolvente y micrófono
+                        integrado para una mejor experiencia.
+                    </p>
+
+                    <span class="precio">$250.000</span>
+
+                    <a href="#productos" class="btn">
+                        Ver producto
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="producto">
+
+                <div class="producto-imagen">
+                    ⌨️
+                </div>
+
+                <div class="producto-contenido">
+
+                    <h3>Teclado Mecánico</h3>
+
+                    <p>
+                        Teclado mecánico diseñado para gaming y
+                        productividad.
+                    </p>
+
+                    <span class="precio">$180.000</span>
+
+                    <a href="#productos" class="btn">
+                        Ver producto
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="producto">
+
+                <div class="producto-imagen">
+                    🖱️
+                </div>
+
+                <div class="producto-contenido">
+
+                    <h3>Mouse Gamer</h3>
+
+                    <p>
+                        Mouse de alta precisión para videojuegos
+                        y trabajo diario.
+                    </p>
+
+                    <span class="precio">$120.000</span>
+
+                    <a href="#productos" class="btn">
+                        Ver producto
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Proyecto desarrollado para portafolio profesional
+        </p>
+    </footer>
+
+</body>
+
+</html>
+```

@@ -1,0 +1,23 @@
+:root {
+    /* Colores principales */
+    --color-principal: #2563eb;
+    --color-secundario: #1e293b;
+    --color-acento: #38bdf8;
+    --color-fondo: #f8fafc;
+    --color-texto: #0f172a;
+    --color-blanco: #ffffff;
+
+    /* Tipografía */
+    --fuente-principal: 'Segoe UI', Arial, sans-serif;
+
+    /* Espaciado */
+    --espaciado-pequeno: 0.5rem;
+    --espaciado-medio: 1rem;
+    --espaciado-grande: 2rem;
+
+    /* Bordes */
+    --radio: 10px;
+
+    /* Transiciones */
+    --transicion: 0.3s ease;
+}

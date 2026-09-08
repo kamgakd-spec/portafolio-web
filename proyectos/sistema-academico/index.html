@@ -1,0 +1,318 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Gestión Académica</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 25px 8%;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #cbd5e1;
+        }
+
+        .volver-container {
+            width: 84%;
+            max-width: 1200px;
+            margin: 20px auto 0;
+        }
+
+        .volver-portafolio {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #1e3a8a;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .volver-portafolio:hover {
+            background: #172554;
+            transform: translateY(-2px);
+        }
+
+        nav {
+            background: #1e3a8a;
+            padding: 15px 8%;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+            font-weight: bold;
+        }
+
+        main {
+            width: 84%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .welcome {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .welcome h2 {
+            color: #172554;
+            margin-bottom: 10px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+
+        .number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #172554;
+        }
+
+        .table-container {
+            background: white;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 12px;
+            overflow-x: auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 14px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #172554;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            background: #172554;
+            color: white;
+            padding: 25px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema de Gestión Académica</h1>
+        <p>Plataforma para organizar y consultar información estudiantil</p>
+    </header>
+
+    <div class="volver-container">
+        <a href="../../index.html" class="volver-portafolio">
+            ← Volver al portafolio
+        </a>
+    </div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#estudiantes">Estudiantes</a>
+        <a href="#cursos">Cursos</a>
+    </nav>
+
+    <main>
+
+        <section class="welcome" id="inicio">
+
+            <h2>Panel académico</h2>
+
+            <p>
+                Bienvenido al sistema de gestión académica.
+                Desde esta plataforma es posible visualizar información
+                relacionada con estudiantes, cursos y rendimiento académico.
+            </p>
+
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Estudiantes</h3>
+                <p class="number">120</p>
+                <p>Estudiantes registrados</p>
+            </div>
+
+            <div class="card">
+                <h3>Cursos</h3>
+                <p class="number">18</p>
+                <p>Cursos disponibles</p>
+            </div>
+
+            <div class="card">
+                <h3>Docentes</h3>
+                <p class="number">15</p>
+                <p>Docentes registrados</p>
+            </div>
+
+            <div class="card">
+                <h3>Promedio</h3>
+                <p class="number">4.2</p>
+                <p>Promedio académico</p>
+            </div>
+
+        </section>
+
+        <section class="table-container" id="estudiantes">
+
+            <h2>Estudiantes registrados</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Programa</th>
+                        <th>Semestre</th>
+                        <th>Promedio</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>Ingeniería de Software</td>
+                        <td>3</td>
+                        <td>4.5</td>
+                    </tr>
+
+                    <tr>
+                        <td>Laura Gómez</td>
+                        <td>Ingeniería de Software</td>
+                        <td>2</td>
+                        <td>4.2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Carlos Rodríguez</td>
+                        <td>Ingeniería de Software</td>
+                        <td>4</td>
+                        <td>4.7</td>
+                    </tr>
+
+                    <tr>
+                        <td>María Torres</td>
+                        <td>Ingeniería de Software</td>
+                        <td>3</td>
+                        <td>4.4</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section class="table-container" id="cursos">
+
+            <h2>Cursos disponibles</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Curso</th>
+                        <th>Docente</th>
+                        <th>Horario</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Programación</td>
+                        <td>Andrés Martínez</td>
+                        <td>Lunes - 8:00 AM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bases de Datos</td>
+                        <td>Daniel López</td>
+                        <td>Martes - 10:00 AM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ingeniería de Software</td>
+                        <td>Laura Sánchez</td>
+                        <td>Miércoles - 2:00 PM</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Proyecto desarrollado para portafolio profesional
+        </p>
+    </footer>
+
+</body>
+
+</html>
+```

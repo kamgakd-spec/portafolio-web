@@ -1,0 +1,76 @@
+/* ===== ESTRUCTURA GENERAL ===== */
+
+.container {
+    width: min(90%, 1100px);
+    margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===== NAVEGACIÓN ===== */
+
+nav {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ===== SECCIONES ===== */
+
+section {
+    padding: 5rem 0;
+}
+
+/* ===== PRESENTACIÓN ===== */
+
+#inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* ===== PROYECTOS ===== */
+
+#proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+/* ===== TABLET ===== */
+
+@media (min-width: 768px) {
+    section {
+        padding: 6rem 0;
+    }
+}
+
+/* ===== ESCRITORIO ===== */
+
+@media (min-width: 1024px) {
+    #inicio {
+        min-height: 90vh;
+    }
+
+    #proyectos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

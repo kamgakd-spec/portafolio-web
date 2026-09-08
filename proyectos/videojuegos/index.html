@@ -1,0 +1,385 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameZone - Videojuegos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #111827;
+            color: #f9fafb;
+        }
+
+        header {
+            background: #030712;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header span {
+            color: #60a5fa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .volver-container {
+            width: 84%;
+            max-width: 1200px;
+            margin: 20px auto 0;
+        }
+
+        .volver-portafolio {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .volver-portafolio:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e3a8a, #312e81);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #dbeafe;
+            font-size: 1.1rem;
+        }
+
+        main {
+            width: 84%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .titulo h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .juegos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .juego {
+            background: #1f2937;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease;
+        }
+
+        .juego:hover {
+            transform: translateY(-8px);
+        }
+
+        .juego-imagen {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            background: #374151;
+        }
+
+        .juego-contenido {
+            padding: 20px;
+        }
+
+        .juego h3 {
+            margin-bottom: 10px;
+            color: #60a5fa;
+        }
+
+        .juego p {
+            color: #d1d5db;
+            line-height: 1.5;
+        }
+
+        .categoria {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: #2563eb;
+            font-size: 0.8rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #030712;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            color: #9ca3af;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Game<span>Zone</span></h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#juegos">Videojuegos</a>
+        </nav>
+
+    </header>
+
+    <div class="volver-container">
+
+        <a href="../../index.html" class="volver-portafolio">
+            ← Volver al portafolio
+        </a>
+
+    </div>
+
+    <section class="hero" id="inicio">
+
+        <div>
+
+            <h2>Explora el mundo gamer</h2>
+
+            <p>
+                Descubre diferentes videojuegos, géneros y experiencias
+                dentro de una interfaz web moderna, interactiva y adaptable.
+            </p>
+
+        </div>
+
+    </section>
+
+    <main>
+
+        <section id="juegos">
+
+            <div class="titulo">
+
+                <h2>Videojuegos destacados</h2>
+
+                <p>
+                    Algunos títulos populares del mundo de los videojuegos.
+                </p>
+
+            </div>
+
+            <div class="juegos">
+
+                <article class="juego">
+
+                    <div class="juego-imagen">
+                        🎮
+                    </div>
+
+                    <div class="juego-contenido">
+
+                        <h3>Grand Theft Auto V</h3>
+
+                        <p>
+                            Juego de acción y mundo abierto con una gran
+                            variedad de actividades y posibilidades.
+                        </p>
+
+                        <span class="categoria">
+                            Acción
+                        </span>
+
+                        <br>
+
+                        <a href="#juegos" class="btn">
+                            Ver información
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="juego">
+
+                    <div class="juego-imagen">
+                        ⚔️
+                    </div>
+
+                    <div class="juego-contenido">
+
+                        <h3>Elden Ring</h3>
+
+                        <p>
+                            RPG de acción caracterizado por su exploración,
+                            combates y amplio mundo fantástico.
+                        </p>
+
+                        <span class="categoria">
+                            RPG
+                        </span>
+
+                        <br>
+
+                        <a href="#juegos" class="btn">
+                            Ver información
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="juego">
+
+                    <div class="juego-imagen">
+                        🏎️
+                    </div>
+
+                    <div class="juego-contenido">
+
+                        <h3>Forza Horizon</h3>
+
+                        <p>
+                            Experiencia de carreras en mundo abierto
+                            enfocada en velocidad y personalización.
+                        </p>
+
+                        <span class="categoria">
+                            Carreras
+                        </span>
+
+                        <br>
+
+                        <a href="#juegos" class="btn">
+                            Ver información
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="juego">
+
+                    <div class="juego-imagen">
+                        🧟
+                    </div>
+
+                    <div class="juego-contenido">
+
+                        <h3>Resident Evil</h3>
+
+                        <p>
+                            Saga reconocida por sus elementos de terror,
+                            supervivencia, exploración y acción.
+                        </p>
+
+                        <span class="categoria">
+                            Terror
+                        </span>
+
+                        <br>
+
+                        <a href="#juegos" class="btn">
+                            Ver información
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Proyecto desarrollado para portafolio profesional
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
+

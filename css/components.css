@@ -1,0 +1,176 @@
+/* ===== COMPONENTES ===== */
+
+/* ===== TÍTULOS ===== */
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+/* ===== ENLACES ===== */
+
+.nav-link {
+    transition: var(--transicion);
+}
+
+.nav-link:hover {
+    color: var(--color-acento);
+}
+
+/* ===== BOTONES ===== */
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: var(--radio);
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.btn:hover {
+    background-color: var(--color-acento);
+    transform: translateY(-2px);
+}
+
+/* ===== TARJETAS DE PROYECTOS ===== */
+
+.proyecto-card {
+    background-color: var(--color-blanco);
+    color: var(--color-secundario);
+    border-radius: var(--radio);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: var(--transicion);
+}
+
+.proyecto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.proyecto-card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.proyecto-card h3 {
+    color: var(--color-texto);
+    font-size: 1.35rem;
+    margin: 1.25rem 1.5rem 0.75rem;
+}
+
+.proyecto-card p {
+    color: #475569;
+    line-height: 1.6;
+    margin: 0 1.5rem;
+}
+
+.proyecto-card .proyecto-tecnologias {
+    margin: 1rem 1.5rem;
+}
+
+.proyecto-card .btn {
+    margin: 0 1.5rem 1.5rem;
+}
+
+/* ===== TECNOLOGÍAS ===== */
+
+.proyecto-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.proyecto-tecnologias span {
+    background-color: #e0f2fe;
+    color: var(--color-secundario);
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+/* ===== FORMULARIO ===== */
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cbd5e1;
+    border-radius: var(--radio);
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--color-principal);
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* ===== MENÚ MÓVIL ===== */
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--color-blanco);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* ===== TABLET ===== */
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* ===== ESCRITORIO ===== */
+
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+}
